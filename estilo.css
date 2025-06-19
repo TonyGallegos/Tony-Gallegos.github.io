@@ -71,12 +71,12 @@ header {
 }
 @media (max-width: 600px) {
   .menu {
-    display: none;
+    display: flex;
     flex-direction: column;
-    position: absolute;
+    position: static;
     top: 70px;
     right: 0;
-    background-color: #118a11;
+    background-color: #006400;
     padding: 1rem;
   }
   .menu.show {
