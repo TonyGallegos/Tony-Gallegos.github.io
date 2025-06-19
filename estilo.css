@@ -69,14 +69,14 @@ header {
   max-height: 500px; /* o un valor suficiente para mostrar el contenido */
   padding: 1rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .menu {
     display: none;
     flex-direction: column;
     position: absolute;
     top: 70px;
     right: 0;
-    background-color: #90a790;
+    background-color: #118a11;
     padding: 1rem;
   }
   .menu.show {
