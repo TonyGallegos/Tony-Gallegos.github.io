@@ -1,0 +1,152 @@
+/* Reset básico */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Encabezado con botón volver */
+header {
+  background-color: #006400;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.volver-btn {
+  text-decoration: none;
+  color: white;
+  background-color: #004d00;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.volver-btn:hover {
+  background-color: #00a71c;
+}
+
+/* Contenido principal */
+.contenido-videos {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Títulos y textos */
+h2 {
+  color: #006400;
+  margin-top: 2rem;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Estilo de videos centrados */
+.video-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+iframe {
+  max-width: 100%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+
+table thead {
+  background-color: #006400; /* Verde oscuro */
+  color: white;
+}
+
+table th,
+table td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #eef6ee;
+}
+
+table tbody tr:hover {
+  background-color: #d0e8d0;
+}
+
+.menu-videos {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.menu-videos a {
+  color: green;
+  text-decoration: underline;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.redes .iconos-redes a {
+  display: inline-block;
+  margin: 1rem;
+  color: #000000;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.redes .iconos-redes a:hover {
+  color: #006400; /* Color al pasar el mouse (rojo oscuro) */
+}
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.icono-red {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 2px;
+  transition: transform 0.2s;
+}
+a:hover .icono-red {
+  transform: scale(1.1);
+}
+
+.imagen-centrada {
+  text-align: center;
+  margin: 20px 0; /* opcional: separa la imagen del resto */
+}
+
+.imagen-centrada img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  width: 550px;
+  height: auto; /* mantiene proporción */
+}

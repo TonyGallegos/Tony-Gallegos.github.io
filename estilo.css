@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffffff;
+  color: #333;
+}
+header {
+  background-color: #006400;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  flex: 1; /* Para centrar el logo */
+}
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu-icon {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+.menu-desplegable {
+  max-height: 0;
+  overflow: hidden;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background-color: #006400;
+  width: 200px;
+  padding: 0 1rem;
+  z-index: 1000;
+  transition: max-height 0.4s ease;
+}
+
+.menu-desplegable a {
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 0;
+  font-weight: bold;
+}
+
+.menu-desplegable a:hover {
+  background-color: #004d00;
+}
+
+/* Al hacer clic: se activa esta clase */
+.menu-desplegable.show {
+  max-height: 500px; /* o un valor suficiente para mostrar el contenido */
+  padding: 1rem;
+}
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #90a790;
+    padding: 1rem;
+  }
+  .menu.show {
+    display: flex;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .logo {
+    flex: 1;
+    text-align: center;
+  }
+}
+.inicio, .redes {
+  padding: 2rem;
+  text-align: center;
+}
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: #000000;
+}
+h1 span {
+  display: block;
+}
+.marca {
+  font-size: 4rem;
+  color: #ff0000;
+  font-weight: bold;
+  display: block;
+}
+
+.text{
+  margin-top: 3rem;
+}
+.text span {
+  display: block;
+  line-height: 2;
+  
+}
+.marcalogo {
+  font-size: 5rem;
+  color: #006400;
+  font-weight: bold;
+  display: block;
+}
+.redes .iconos-redes a {
+  display: inline-block;
+  margin: 1rem;
+  color: #000000;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.redes .iconos-redes a:hover {
+  color: #006400; /* Color al pasar el mouse (rojo oscuro) */
+}
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.icono-red {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 8px;
+  transition: transform 0.2s;
+}
+a:hover .icono-red {
+  transform: scale(1.1);
+}
+/* ===== MENÚ LATERAL SLIDE ===== */
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Oculto al inicio */
+  width: 250px;
+  height: 100%;
+  background-color: #004d00;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 1rem;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.menu-lateral a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight:400 ;
+}
+.menu-lateral p {
+  color: white;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.menu-lateral a:hover {
+  background-color: #046804;
+  padding-left: 0.5rem;
+  border-left: 4px solid #ff0000;
+}
+
+/* Activado */
+.menu-lateral.show {
+  left: 0;
+}
+
+/* Ícono de menú */
+.menu-icon {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.contacto {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.contacto h2 {
+  margin-bottom: 1rem;
+  color: #006400;
+}
+
+.contacto p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.contacto i.fab.fa-whatsapp {
+  color: black;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.contacto a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* Hover: cambia a verde */
+.contacto a:hover,
+.contacto i.fab.fa-whatsapp:hover {
+  color: #00a71c;
+}

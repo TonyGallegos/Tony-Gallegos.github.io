@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos - SISTELBO Academia</title>
+  <link rel="stylesheet" href="estilovideos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">SISTELBO Academia</div>
+    <a href="index.html" class="volver-btn">
+      <i class="fas fa-arrow-left"></i> Volver al inicio
+    </a>
+  </header>
+  <nav class="menu-videos">
+    <a href="videos.html">Simulacion Proteus</a>
+    <a href="leyohm.html">Ley de Ohm</a>
+    <a href="orancle.html">Oracle Database</a>
+    <a href="server.html">SQL Server</a>
+    <a href="edi.html">Ecuaciones Diferenciales</a>
+    <a href="java.html"> Java IDE</a>
+    <a href="mas.html">Más...</a>
+    </nav>
+    <div class="imagen-centrada">
+    <img src="Imagenes/proteu.png" alt="Proteus 7.9" />
+    </div>
+  <main class="contenido-videos">
+
+    <section>
+      <h2>Proteus 7.9 – Simulación de un circuito eléctrico básico</h2>
+
+        <p>
+            <strong>Proteus 7.9</strong> es un software de simulación electrónica utilizado para diseñar y probar circuitos antes de implementarlos físicamente. Permite colocar componentes virtuales, conectarlos y simular su comportamiento en tiempo real, facilitando el aprendizaje de electrónica y el desarrollo de prototipos.
+        </p>
+
+        <h3>Componentes básicos usados en la simulación:</h3>
+        <ul>
+            <li><strong>Batería (Cell):</strong> Proporciona energía al circuito. En este caso, se configura con 9V.</li>
+            <li><strong>Interruptor (Switch):</strong> Permite abrir o cerrar el paso de corriente.</li>
+            <li><strong>Resistor (Resistor):</strong> Limita la corriente que pasa por el LED, evitando que se queme. Se usa uno de 220 ohmios.</li>
+            <li><strong>LED amarillo (LED):</strong> Emite luz cuando recibe corriente en la polaridad correcta.</li>
+        </ul>
+
+        <h3>⚙️ Funcionamiento del circuito:</h3>
+        <p>
+            Cuando el interruptor se activa, la corriente fluye desde la batería a través del resistor y el LED, provocando que este se encienda. El resistor controla la intensidad de corriente para proteger al LED.
+        </p>
+
+        <h3>✅ Simulación paso a paso:</h3>
+        <ol>
+            <li>Se agregan los componentes desde el panel de Proteus (tecla P).</li>
+            <li>Se colocan sobre la hoja de trabajo con clics sucesivos.</li>
+            <li>Se realizan las conexiones entre terminales usando la herramienta de cableado.</li>
+            <li>Se cambian nombres y valores para mayor claridad (ej. cambiar "R1" a "220 ohmios").</li>
+            <li>Se simula el encendido/apagado del circuito activando el interruptor.</li>
+            <li>Finalmente, se guarda el proyecto para futuras ediciones o consultas.</li>
+        </ol>
+
+        <h3>📘 Aplicaciones:</h3>
+        <p>
+            Este tipo de simulación es útil para estudiantes de electrónica, docentes y desarrolladores, ya que permite probar circuitos básicos sin necesidad de hardware físico.
+        </p>
+
+        <p><strong>A continuación, se visualizará el ejemplo en el siguiente video:</strong></p>
+
+      <div class="video-grid">
+        <iframe width="660" height="390"
+        src="https://www.youtube.com/embed/oVMWmUAGRss?list=PLXxg4ODr91JPNlX6yfkmP2Dh8k2oGWtlo"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section>
+        <h2>Medición de corriente y voltaje en un circuito en Proteus 7.9</h2>
+
+        <p>
+            <strong>Proteus 7.9</strong> permite no solo simular el funcionamiento de un circuito eléctrico, sino también medir parámetros fundamentales como la corriente y el voltaje, utilizando instrumentos virtuales. Este tipo de simulación es clave para el aprendizaje de electrónica básica y el cumplimiento de las leyes fundamentales de los circuitos.
+        </p>
+
+        <h3>⚙️ Componentes utilizados:</h3>
+        <ul>
+            <li><strong>Fuente de alimentación (Cell):</strong> Voltaje de 12V, renombrada como "F".</li>
+            <li><strong>Resistor:</strong> Valor de 980 ohmios, renombrado como "R".</li>
+            <li><strong>LED amarillo:</strong> Voltaje de trabajo de 2.2V y corriente de 10 mA, renombrado como "LED".</li>
+        </ul>
+
+        <h3>✅ Montaje del circuito:</h3>
+        <p>
+            Los componentes se conectan en serie, formando un circuito básico que enciende el LED cuando se activa la fuente. Se verifican los valores nominales y se ajustan sus nombres y parámetros en Proteus.
+        </p>
+
+        <h3>✅ Medición de corriente:</h3>
+        <ol>
+            <li>
+            <strong>Uso de amperímetros virtuales:</strong>
+            <ul>
+                <li>Se intercalan en distintos puntos del circuito (fuente, después del resistor, después del LED).</li>
+                <li>Se configura la escala en miliamperios (mA).</li>
+            </ul>
+            </li>
+            <li>
+            <strong>Resultado:</strong>
+            <ul>
+                <li>La corriente es uniforme en todo el circuito, con una lectura de aproximadamente 9.97 mA.</li>
+                <li>Se confirma la ley de la corriente de Kirchhoff, donde la corriente es la misma en todos los puntos de un circuito en serie.</li>
+            </ul>
+            </li>
+        </ol>
+
+        <h3>✅ Medición de voltaje:</h3>
+        <ol>
+            <li>
+            <strong>Uso de voltímetros virtuales:</strong>
+            <ul>
+                <li>Se colocan en paralelo con los componentes (fuente, resistor y LED).</li>
+            </ul>
+            </li>
+            <li>
+            <strong>Resultados obtenidos:</strong>
+            <ul>
+                <li>Fuente: 12V</li>
+                <li>LED: 2.23V</li>
+                <li>Resistor: 9.77V</li>
+            </ul>
+            </li>
+            <li>
+            <strong>Análisis:</strong>
+            <ul>
+                <li>Se comprueba que la suma de las caídas de voltaje (LED + Resistor) es igual al voltaje total de la fuente.</li>
+                <li>Se confirma la ley de voltajes de Kirchhoff: 12V = 2.23V + 9.77V</li>
+            </ul>
+            </li>
+        </ol>
+
+        <h3>📘 Observación:</h3>
+        <p>
+            La simulación en Proteus demuestra de forma clara cómo la corriente es constante en un circuito en serie, mientras que el voltaje se reparte entre los componentes. Las ligeras variaciones en los valores (0.03V o 0.03mA) son normales y aceptables en electrónica.
+        </p>
+
+        <p><strong>A continuación, se visualizará el ejemplo en el siguiente video:</strong></p>
+
+        <div class="video-grid">
+            <iframe width="660" height="390"
+            src="https://www.youtube.com/embed/rLnsma2Lt9E?list=PLXxg4ODr91JPNlX6yfkmP2Dh8k2oGWtlo"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+        </section>
+    <section class="video-descripcion">
+    <h2>Simulación de un Regulador de Voltaje con Proteus 7.9</h2>
+
+    <p>
+        En este proyecto se simula un circuito regulador de voltaje utilizando <strong>Proteus 7.9</strong>, con el objetivo de observar cómo se regula la tensión de salida mediante un potenciómetro. Este tipo de montaje es muy útil para entender el funcionamiento del regulador 7805, el amplificador operacional 741 y la distribución de componentes pasivos como capacitores y potenciómetros.
+    </p>
+
+    <h3>Componentes utilizados:</h3>
+    <ol>
+        <li><strong>Regulador de voltaje 7805:</strong> Regula la tensión de entrada a un valor fijo de 5V (ajustable en este montaje con un potenciómetro).</li>
+        <li><strong>Amplificador operacional 741:</strong> Actúa como parte del control y regulación de voltaje.</li>
+        <li><strong>Capacitores cerámicos:</strong>
+        <ul>
+            <li>C1 = 100nF (código 104)</li>
+            <li>C2 = 330nF (código 331)</li>
+        </ul>
+        </li>
+        <li><strong>Potenciómetro de 10 kΩ:</strong> Permite ajustar la salida de voltaje.</li>
+        <li><strong>Multímetro digital (DC voltímetro):</strong> Mide la tensión de salida del regulador.</li>
+        <li><strong>Fuente de alimentación (BAT1):</strong> Voltaje de entrada de 12V.</li>
+    </ol>
+
+    <h3>⚙️ Proceso de simulación:</h3>
+    <ol>
+        <li>
+        <strong>Agregar componentes:</strong>
+        <ul>
+            <li>Se seleccionan los dispositivos desde la librería de Proteus mediante el botón P.</li>
+            <li>Los componentes se colocan sobre el área de trabajo y se orientan según el diseño.</li>
+        </ul>
+        </li>
+        <li>
+        <strong>Configuración de valores y nombres:</strong>
+        <ul>
+            <li>BAT1: 12V</li>
+            <li>C1: 100nF</li>
+            <li>C2: 330nF</li>
+            <li>Regulador 7805: con etiqueta "U2"</li>
+            <li>OpAmp 741: con etiqueta "U1"</li>
+            <li>Potenciómetro: llamado "Regulador", con valor de 10kΩ</li>
+            <li>Voltímetro: renombrado como "Regulador de voltaje"</li>
+        </ul>
+        </li>
+        <li>
+        <strong>Conexiones del circuito:</strong>
+        <ul>
+            <li>Se conectan los componentes siguiendo un esquema típico de regulación de voltaje.</li>
+            <li>Se colocan etiquetas de polaridad: positivo y GND (ground).</li>
+            <li>El voltímetro se conecta en paralelo con la salida del regulador para medir la tensión resultante.</li>
+        </ul>
+        </li>
+    </ol>
+
+    <h3>✅ Resultado de la simulación:</h3>
+    <ul>
+        <li>Al iniciar la simulación, se ajusta el potenciómetro desde 0% a 100%.</li>
+        <li>El voltaje de salida varía aproximadamente de 6.5V a 10.8V, dependiendo de la posición del potenciómetro.</li>
+        <li>Se puede observar cómo el circuito regula la tensión, cumpliendo su función correctamente.</li>
+    </ul>
+
+    <h3>📘 Observación:</h3>
+    <p>
+        Este montaje demuestra cómo utilizar el regulador 7805 en conjunto con componentes auxiliares para obtener un voltaje ajustable. Además, se refuerzan conceptos sobre orientación de componentes, uso de instrumentos virtuales en Proteus y ajuste de parámetros.
+    </p>
+
+    <p><strong>A continuación, se visualizará el ejemplo en el siguiente video:</strong></p>
+
+    <div class="video-grid">
+        <iframe width="660" height="390"
+        src="https://www.youtube.com/embed/EH_RsbiYLS0?list=PLXxg4ODr91JPNlX6yfkmP2Dh8k2oGWtlo"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+    </section>
+
+    <section class="video-descripcion">
+        <h2>Simulación en Proteus del Circuito Oscilador CRT para dos LEDs</h2>
+
+        <p>
+            El <strong>oscilador CRT</strong> (Capacitor - Resistor - Transistor) es un circuito básico que alterna el encendido de dos LEDs. Utiliza transistores, capacitores y resistores para generar una señal oscilante sin necesidad de un microcontrolador. Es ideal para comprender los principios de temporización y conmutación en electrónica.
+        </p>
+
+        <h3>Componentes utilizados y cómo buscarlos en Proteus:</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Componente</th>
+                <th>Valor</th>
+                <th>Comando para buscar en Proteus (botón P)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Capacitores electrolíticos</td>
+                <td>2 × 220μF</td>
+                <td>CAP (luego seleccionar "Electrolytic Capacitor")</td>
+            </tr>
+            <tr>
+                <td>Resistores</td>
+                <td>2 × 10kΩ</td>
+                <td>RES o RESISTOR</td>
+            </tr>
+            <tr>
+                <td>Resistores</td>
+                <td>2 × 100Ω</td>
+                <td>RES o RESISTOR</td>
+            </tr>
+            <tr>
+                <td>LEDs</td>
+                <td>2 × LED amarillo</td>
+                <td>LED-YELLOW</td>
+            </tr>
+            <tr>
+                <td>Transistores NPN</td>
+                <td>2 × BC548</td>
+                <td>BC548</td>
+            </tr>
+            <tr>
+                <td>Fuente de alimentación</td>
+                <td>+12V DC</td>
+                <td>DC POWER o agregar manualmente con terminales POWER y GND desde la barra lateral</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h3>⚙️ Funcionamiento del circuito:</h3>
+        <p>
+            Los capacitores (C1 y C2) se cargan y descargan alternadamente, activando y desactivando los transistores Q1 y Q2. Esto hace que los LEDs D1 y D2 parpadeen en forma alternada. Los resistores R2 y R3 limitan la corriente hacia las bases de los transistores, y R1 y R4 protegen los LEDs.
+        </p>
+
+        <h3>✅ Pasos para la simulación en Proteus:</h3>
+        <ol>
+            <li>Abre Proteus 7.9 o superior.</li>
+            <li>Haz clic en el botón P (Pick Devices).</li>
+            <li>Escribe el nombre del componente tal como aparece en la tabla y haz doble clic para agregarlo.</li>
+            <li>Coloca los componentes en el área de trabajo según el esquema.</li>
+            <li>Usa la herramienta de cableado para hacer las conexiones.</li>
+            <li>Agrega terminales de Power y Ground desde la barra lateral.</li>
+            <li>Verifica los valores de los componentes haciendo doble clic sobre ellos y modificando:
+            <ul>
+                <li>C1 y C2: 220µF</li>
+                <li>R1 y R4: 100Ω</li>
+                <li>R2 y R3: 10kΩ</li>
+            </ul>
+            </li>
+            <li>Presiona el botón Play (▶) para iniciar la simulación.</li>
+        </ol>
+
+        <h3>📘 Aplicaciones educativas:</h3>
+        <ul>
+            <li>Comprensión de osciladores básicos sin cristal.</li>
+            <li>Estudio de cargas/descargas de capacitores.</li>
+            <li>Aplicación de transistores como interruptores.</li>
+            <li>Observación del efecto de intermitencia alterna sin necesidad de lógica digital.</li>
+        </ul>
+
+        <p><strong>A continuación, se visualizará el ejemplo en el siguiente video:</strong></p>
+
+        <div class="video-grid">
+            <iframe width="660" height="390"
+            src="https://www.youtube.com/embed/WhUCKdjiFDk?list=PLXxg4ODr91JPNlX6yfkmP2Dh8k2oGWtlo"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+        </section>
+
+    <section class="video-descripcion">
+    <h2>Circuito Generador de Sonido con 555: Sirena de Distintos Tonos</h2>
+
+    <p>
+        Este circuito genera un sonido oscilante tipo sirena utilizando el temporizador 555 en modo astable. Gracias al uso de un potenciómetro, es posible variar el tono del sonido que se emite a través de un altavoz o buzzer. Este tipo de montaje es ideal para prácticas educativas, alarmas, juguetes o efectos sonoros.
+    </p>
+
+    <h3>🔧 Componentes utilizados y comandos en Proteus:</h3>
+    <table>
+        <thead>
+        <tr>
+            <th>Componente</th>
+            <th>Valor</th>
+            <th>Comando para buscar en Proteus (botón P)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Capacitor</td>
+            <td>10nF</td>
+            <td>CAP (elige un capacitor cerámico no polarizado)</td>
+        </tr>
+        <tr>
+            <td>Capacitor</td>
+            <td>100nF</td>
+            <td>CAP</td>
+        </tr>
+        <tr>
+            <td>Resistor</td>
+            <td>220Ω</td>
+            <td>RES o RESISTOR</td>
+        </tr>
+        <tr>
+            <td>Resistor</td>
+            <td>10kΩ</td>
+            <td>RES o RESISTOR</td>
+        </tr>
+        <tr>
+            <td>Potenciómetro</td>
+            <td>50kΩ</td>
+            <td>POT-HG (Horizontal Potentiometer)</td>
+        </tr>
+        <tr>
+            <td>Transistor NPN</td>
+            <td>2N2222</td>
+            <td>2N2222</td>
+        </tr>
+        <tr>
+            <td>Circuito integrado temporizador</td>
+            <td>NE555</td>
+            <td>NE555 o TIMER</td>
+        </tr>
+        <tr>
+            <td>Altavoz o Buzzer</td>
+            <td>Speaker</td>
+            <td>SPEAKER o BUZZER</td>
+        </tr>
+        <tr>
+            <td>Fuente de alimentación</td>
+            <td>+9V</td>
+            <td>DC POWER o con POWER y GND desde la barra</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>⚙️ Funcionamiento del circuito:</h3>
+    <ul>
+        <li>El CI 555 funciona en modo astable, generando una señal continua que varía según el ajuste del potenciómetro.</li>
+        <li>El potenciómetro de 50kΩ permite modificar la frecuencia del oscilador, lo que produce diferentes tonos de sonido.</li>
+        <li>El transistor 2N2222 actúa como amplificador para entregar suficiente corriente al altavoz o buzzer.</li>
+        <li>Los capacitores estabilizan el funcionamiento del temporizador y afectan la frecuencia de oscilación.</li>
+    </ul>
+
+    <h3>✅ Pasos para simular en Proteus:</h3>
+    <ol>
+        <li>Abre Proteus y haz clic en el botón P.</li>
+        <li>Escribe los nombres indicados en la tabla para agregar cada componente.</li>
+        <li>Colócalos en el área de trabajo siguiendo el diseño mostrado.</li>
+        <li>Verifica las conexiones del circuito según el diagrama:
+        <ul>
+            <li>Pin 3 del 555 va al transistor.</li>
+            <li>El transistor activa el altavoz.</li>
+            <li>Capacitores y resistores están conectados entre los pines 2, 6 y 7 del 555.</li>
+        </ul>
+        </li>
+        <li>Ajusta el valor del potenciómetro para cambiar el tono del sonido.</li>
+        <li>Presiona Play (▶) para iniciar la simulación.</li>
+    </ol>
+
+    <h3>📘 Aplicaciones educativas:</h3>
+    <ul>
+        <li>Demostración del modo astable del temporizador 555.</li>
+        <li>Aprendizaje sobre variación de frecuencia con resistencias variables.</li>
+        <li>Aplicación de transistores como etapas de amplificación.</li>
+        <li>Construcción de alarmas, efectos sonoros o juguetes electrónicos.</li>
+    </ul>
+
+    <p><strong>A continuación, se visualizará el ejemplo en el siguiente video:</strong></p>
+
+    <div class="video-grid">
+        <iframe width="660" height="390"
+        src="https://www.youtube.com/embed/_cWMdqPpJOc?list=PLXxg4ODr91JPNlX6yfkmP2Dh8k2oGWtlo"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+    </section>
+
+    <section>
+    <h2>Próximos Videos...</h2>
+    <p style="font-weight: bold; font-size: 1.1em;">
+        Si quieres ver más videos, haz clic aquí 👉
+        <a href="https://www.youtube.com/@sistelbo/playlists" target="_blank">
+        <img src="Imagenes/icons8-youtube-play-94.png" alt="YouTube Play" style="width: 40px; vertical-align: middle;"> SISTELBO Youtube
+        </a>
+    </p>
+    </section>
+
+  </main>
+
+</body>
+</html>

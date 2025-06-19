@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos - SISTELBO Academia</title>
+  <link rel="stylesheet" href="estilovideos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">SISTELBO Academia</div>
+    <a href="index.html" class="volver-btn">
+      <i class="fas fa-arrow-left"></i> Volver al inicio
+    </a>
+  </header>
+  <nav class="menu-videos">
+    <a href="videos.html">Simulacion Proteus</a>
+    <a href="leyohm.html">Ley de Ohm</a>
+    <a href="orancle.html">Oracle Database</a>
+    <a href="server.html">SQL Server</a>
+    <a href="edi.html">Ecuaciones Diferenciales</a>
+    <a href="java.html"> Java IDE</a>
+    <a href="mas.html">Más...</a>
+    </nav>
+    <div class="imagen-centrada">
+        <img src="Imagenes/javat.png" alt="Java IDE" />
+        </div>
+
+  <main class="contenido-videos">
+
+    <section>
+    <h2>Programación en Java – Uso de IDE y Conversión de Diagrama de Flujo a Código</h2>
+
+    <p>
+        La programación en Java es una habilidad fundamental para el desarrollo de aplicaciones multiplataforma, gracias a su versatilidad, orientación a objetos y amplia comunidad. Para facilitar el proceso de desarrollo, se utilizan Entornos de Desarrollo Integrados (IDE) como Eclipse, NetBeans o IntelliJ IDEA, que ofrecen herramientas para escribir, compilar, depurar y ejecutar código Java de manera eficiente.
+    </p>
+
+    <h3>¿Qué es un IDE para Java?</h3>
+    <p>
+        Un IDE (Integrated Development Environment) es un software que integra varias herramientas de programación: editor de código, compilador, depurador, gestor de proyectos, entre otros. Permite escribir código con ayudas como autocompletado, detección de errores en tiempo real y ejecución directa, acelerando el proceso de desarrollo y aprendizaje.
+    </p>
+
+    <h3>De Diagrama de Flujo a Código Java</h3>
+    <p>
+        El diagrama de flujo es una representación gráfica que muestra la secuencia lógica y el flujo de un algoritmo o programa mediante símbolos como flechas, rectángulos (procesos), rombos (decisiones), entre otros. Pasar de un diagrama de flujo a código Java implica traducir cada símbolo y flujo en instrucciones y estructuras de programación.
+    </p>
+
+    <h3>Pasos para convertir un diagrama de flujo a código Java:</h3>
+    <ol>
+        <li>Analizar el diagrama de flujo y entender la lógica general del algoritmo.</li>
+        <li>Identificar los procesos: cada rectángulo corresponde a una o varias instrucciones o asignaciones en Java.</li>
+        <li>Traducir las decisiones: los rombos representan condiciones que se convierten en sentencias <code>if</code>, <code>else if</code> y <code>else</code>.</li>
+        <li>Determinar los ciclos: símbolos de bucle o repeticiones se traducen a estructuras <code>while</code>, <code>for</code> o <code>do-while</code>.</li>
+        <li>Definir variables y tipos: según el uso en el diagrama, se declaran variables en Java con tipos apropiados (<code>int</code>, <code>double</code>, <code>String</code>, etc.).</li>
+        <li>Escribir el código en el IDE: implementar la lógica paso a paso, respetando la estructura del diagrama.</li>
+        <li>Compilar y probar: ejecutar el programa para validar que el comportamiento coincida con el diagrama.</li>
+    </ol>
+
+    <h3>Ejemplo sencillo:</h3>
+    <p>Diagrama de flujo para sumar dos números:</p>
+    <ul>
+        <li>Inicio</li>
+        <li>Leer número1 y número2</li>
+        <li>Sumar: suma = número1 + número2</li>
+        <li>Mostrar suma</li>
+        <li>Fin</li>
+    </ul>
+
+    <p>Traducción a Java:</p>
+
+    <pre><code>import java.util.Scanner;
+
+    public class Suma {
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Ingrese número 1: ");
+            int numero1 = sc.nextInt();
+            System.out.print("Ingrese número 2: ");
+            int numero2 = sc.nextInt();
+            int suma = numero1 + numero2;
+            System.out.println("La suma es: " + suma);
+            sc.close();
+        }
+    }
+    </code></pre>
+
+    <h3>Ventajas del uso de IDE:</h3>
+    <ul>
+        <li>Autocompletado y sugerencias de código.</li>
+        <li>Depuración paso a paso para encontrar errores lógicos.</li>
+        <li>Integración con sistemas de control de versiones (Git).</li>
+        <li>Gestión de proyectos y dependencias.</li>
+    </ul>
+
+    <h3>Aplicaciones:</h3>
+    <ul>
+        <li>Desarrollo de aplicaciones de consola, escritorio y móviles.</li>
+        <li>Programación orientada a objetos y diseño modular.</li>
+        <li>Aprendizaje y enseñanza de algoritmos y estructuras de datos.</li>
+    </ul>
+
+    <p><strong>A continuación, se visualizará un tutorial práctico 1 en video:</strong></p>
+
+    <div class="video-grid">
+        <iframe width="660" height="390"
+        src="https://www.youtube.com/embed/25OflmyTHf0?list=PLXxg4ODr91JO6TeVKh--2DfOtIeCG8WlA"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+    <p><strong>A continuación, se visualizará un tutorial práctico 2 en video:</strong></p>
+    <div class="video-grid">
+        <iframe width="660" height="390"
+        src="https://www.youtube.com/embed/WK7wIvZZxOU?list=PLXxg4ODr91JO6TeVKh--2DfOtIeCG8WlA&index=2"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+
+    </section>
+
+    
+
+    <section>
+    <h2>Próximos Videos...</h2>
+    <p style="font-weight: bold; font-size: 1.1em;">
+        Si quieres ver más videos, haz clic aquí 👉
+        <a href="https://www.youtube.com/@sistelbo/playlists" target="_blank">
+        <img src="Imagenes/icons8-youtube-play-94.png" alt="YouTube Play" style="width: 40px; vertical-align: middle;"> SISTELBO Youtube
+        </a>
+    </p>
+    </section>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos - SISTELBO Academia</title>
+  <link rel="stylesheet" href="estilovideos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">SISTELBO Academia</div>
+    <a href="index.html" class="volver-btn">
+      <i class="fas fa-arrow-left"></i> Volver al inicio
+    </a>
+  </header>
+  <nav class="menu-videos">
+    <a href="videos.html">Simulacion Proteus</a>
+    <a href="leyohm.html">Ley de Ohm</a>
+    <a href="orancle.html">Oracle Database</a>
+    <a href="server.html">SQL Server</a>
+    <a href="edi.html">Ecuaciones Diferenciales</a>
+    <a href="java.html"> Java IDE</a>
+    <a href="mas.html">Más...</a>
+    </nav>
+    <div class="imagen-centrada">
+        <img src="Imagenes/EDI.jpg" alt="Ecuaciones Diferenciales" />
+        </div>
+  <main class="contenido-videos">
+
+    <section>
+    <h2>Ecuaciones Diferenciales de Variables Separables</h2>
+
+    <p>
+        Las <strong>ecuaciones diferenciales de variables separables</strong> son un tipo de ecuación diferencial ordinaria (EDO) donde es posible reescribir la expresión de modo que todas las variables dependientes (por ejemplo, <em>y</em>) y sus diferenciales queden en un lado, y las variables independientes (por ejemplo, <em>x</em>) en el otro. Esto permite integrar ambos lados por separado para encontrar la solución.
+    </p>
+
+    <h3>Forma general:</h3>
+    <p>
+        <code>dy/dx = g(x) ⋅ h(y)</code><br>
+        Se reordena como:<br>
+        <code>(1/h(y)) dy = g(x) dx</code>
+    </p>
+
+    <h3>Proceso de resolución:</h3>
+    <ul>
+        <li>Separar las variables: reescribir la ecuación agrupando términos con <em>y</em> y <em>x</em> en lados opuestos.</li>
+        <li>Integrar ambos lados: aplicar integrales a cada lado de la ecuación.</li>
+        <li>Resolver la integral: obtener la expresión general de la solución.</li>
+        <li>Despejar <em>y</em> si es posible, para obtener la solución explícita.</li>
+        <li>Aplicar condiciones iniciales (si existen) para encontrar constantes de integración.</li>
+    </ul>
+
+    <h3>Ejemplo:</h3>
+    <p>
+        <code>dy/dx = x y</code><br>
+        Separando variables:<br>
+        <code>(1/y) dy = x dx</code><br>
+        Integrando:<br>
+        <code>ln|y| = (x²)/2 + C</code><br>
+        Despejando:<br>
+        <code>y = C' e^{(x²)/2}, (C' = ±e^C)</code>
+    </p>
+
+    <h3>📘 Aplicaciones:</h3>
+    <ul>
+        <li>Modelado de crecimiento poblacional (modelo exponencial).</li>
+        <li>Procesos de enfriamiento (ley de enfriamiento de Newton).</li>
+        <li>Circuitos eléctricos simples (descarga de un capacitor).</li>
+        <li>Dinámica de partículas con fuerzas proporcionales.</li>
+    </ul>
+
+    <h3>Simulación y análisis:</h3>
+    <p>
+        En software como MATLAB, GeoGebra o Wolfram Alpha, es posible graficar soluciones y analizar su comportamiento para distintos valores de constantes iniciales, lo que permite visualizar su evolución en el tiempo.
+    </p>
+
+    <p><strong>A continuación, se visualizará el ejemplo en el siguiente video:</strong></p>
+
+    <div class="video-grid">
+        <iframe width="660" height="390"
+        src="https://www.youtube.com/embed/Coj-imtpbcU?list=PLXxg4ODr91JOH6PxATchDv62jEi3PMh4c"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+    </section>
+
+    <section>
+    <h2>Ecuaciones Diferenciales Homogéneas</h2>
+
+    <p>
+        Las <strong>ecuaciones diferenciales homogéneas</strong> son un tipo de ecuaciones diferenciales ordinarias de primer orden en las que el cociente de las funciones que aparecen depende solo de la relación <em>y/x</em>. 
+        Estas ecuaciones se caracterizan porque pueden resolverse mediante un cambio de variable que permite separarlas en variables independientes y dependientes.
+    </p>
+
+    <h3>Forma general:</h3>
+    <p>
+        <code>dy/dx = F(y/x)</code><br>
+        donde <em>F</em> es una función de la razón <em>y/x</em>.
+    </p>
+
+    <h3>Proceso de resolución:</h3>
+    <ul>
+        <li>Cambio de variable: se sustituye <code>v = y/x</code>, lo que implica <code>y = v x</code>.</li>
+        <li>Derivar: <code>dy/dx = v + x dv/dx</code>.</li>
+        <li>Sustituir en la ecuación original y simplificar para obtener una ecuación con variables separables en <em>v</em> y <em>x</em>.</li>
+        <li>Separar variables y integrar.</li>
+        <li>Despejar <em>y</em> y aplicar condiciones iniciales si se dan.</li>
+    </ul>
+
+    <h3>Ejemplo:</h3>
+    <p>
+        <code>dy/dx = (x + y)/x</code><br>
+        Es homogénea porque: <code>(x + y)/x = 1 + y/x</code><br>
+        Cambio de variable: <code>v = y/x ⇒ dy/dx = v + x dv/dx</code><br>
+        Sustituimos: <code>v + x dv/dx = 1 + v</code><br>
+        Simplificamos: <code>x dv/dx = 1</code><br>
+        Separar: <code>dv = (1/x) dx</code><br>
+        Integrar: <code>v = ln|x| + C</code><br>
+        Recuperar <em>y</em>: <code>y = x v = x ln|x| + Cx</code>
+    </p>
+
+    <h3>📘 Aplicaciones:</h3>
+    <ul>
+        <li>Movimiento de cuerpos bajo fuerzas proporcionales.</li>
+        <li>Modelos económicos básicos.</li>
+        <li>Fenómenos de flujo y transferencia en ingeniería.</li>
+        <li>Procesos eléctricos y mecánicos con simetría de escala.</li>
+    </ul>
+
+    <h3>Simulación y análisis:</h3>
+    <p>
+        Es posible resolver y graficar este tipo de ecuaciones con herramientas como MATLAB, GeoGebra, Maple o Wolfram Alpha, lo que ayuda a visualizar el comportamiento de las soluciones en función de <em>x</em>.
+    </p>
+
+    <p><strong>A continuación, se visualizará el ejemplo en el siguiente video:</strong></p>
+
+    <div class="video-grid">
+        <iframe width="660" height="390"
+        src="https://www.youtube.com/embed/YcnezRT3TM8?list=PLXxg4ODr91JOH6PxATchDv62jEi3PMh4c&index=2"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+    </section>
+
+    <section>
+    <h2>Ecuaciones Diferenciales de Primer Orden de Grado Superior – Método Respecto de P</h2>
+
+    <p>
+        Una <strong>ecuación diferencial de primer orden y grado superior</strong> es aquella donde la derivada <em>dy/dx</em> aparece elevada a una potencia mayor que uno o dentro de una expresión no lineal. Estas ecuaciones suelen expresarse de la forma:
+    </p>
+
+    <p>
+        <code>F(x, y, P) = 0</code> donde <code>P = dy/dx</code>
+    </p>
+
+    <p>
+        El <strong>método respecto de P</strong> se aplica cuando es posible despejar <em>P</em> de la ecuación o reducirla a una forma integrable respecto a <em>P</em>.
+    </p>
+
+    <h3>Proceso de resolución mediante el método respecto de P:</h3>
+    <ul>
+        <li>Identificar la ecuación y establecer <code>P = dy/dx</code>.</li>
+        <li>Reescribir la ecuación en función de <em>x</em>, <em>y</em> y <em>P</em>.</li>
+        <li>Considerar <em>y</em> como función de <em>P</em> y plantear <code>dy = P dx</code>.</li>
+        <li>Tratar de separar las variables o integrar respecto de <em>P</em> o <em>x</em>, según corresponda.</li>
+        <li>Resolver la integral y despejar la función solución <code>y(x)</code>.</li>
+        <li>Aplicar condiciones iniciales si se dan, para determinar constantes de integración.</li>
+    </ul>
+
+    <h3>Ejemplo:</h3>
+    <p>
+        Consideremos la ecuación:<br>
+        <code>(x P² + x) = x y − (y − 1 − x²) P</code><br>
+        Donde <code>P = dy/dx</code>.<br>
+        Reordenamos y agrupamos términos:<br>
+        <code>x P² + (y − 1 − x²) P + (x − x y) = 0</code><br>
+        Esto es una ecuación cuadrática en <em>P</em>, se resuelve mediante la fórmula general:<br>
+        <code>P = [−(y − 1 − x²) ± sqrt((y − 1 − x²)² − 4 x (x − x y)) ] / (2x)</code><br>
+        Se integra la expresión de <em>P</em> obtenida, aplicando condiciones si existen.
+    </p>
+
+    <h3>📘 Aplicaciones:</h3>
+    <ul>
+        <li>Problemas de dinámica donde la velocidad (derivada) aparece al cuadrado o en grado superior.</li>
+        <li>Modelos físicos no lineales.</li>
+        <li>Análisis de trayectorias en mecánica clásica.</li>
+    </ul>
+
+    <h3>Simulación y análisis:</h3>
+    <p>
+        Este tipo de ecuaciones se puede analizar y graficar con MATLAB, Maple, GeoGebra o mediante sistemas de álgebra computacional como Wolfram Alpha, permitiendo observar el comportamiento de las soluciones en distintos escenarios.
+    </p>
+
+    <p><strong>A continuación, se visualizará el ejemplo 1 en el siguiente video:</strong></p>
+
+    <div class="video-grid">
+        <iframe width="660" height="390"
+        src="https://www.youtube.com/embed/P5pKTZHpRjo?list=PLXxg4ODr91JOH6PxATchDv62jEi3PMh4c&index=3"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+    <p><strong>A continuación, se visualizará el ejemplo 2 en el siguiente video:</strong></p>
+    <div class="video-grid">
+        <iframe width="660" height="390"
+        src="https://www.youtube.com/embed/JrlFDjhmFD4?list=PLXxg4ODr91JOH6PxATchDv62jEi3PMh4c&index=4"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+    </section>
+
+    <section>
+    <h2>Ecuaciones Diferenciales de Primer Orden y Grado Superior – Método Respecto de Y</h2>
+
+    <p>
+        Las ecuaciones diferenciales de primer orden y grado superior son aquellas en las que la derivada <em>dy/dx</em> aparece elevada a una potencia mayor a uno o dentro de una expresión no lineal. El método respecto de <em>Y</em> es una técnica útil para resolver ecuaciones cuando es posible expresar la variable independiente <em>x</em> y su diferencial en función de <em>y</em> y <code>P = dy/dx</code>.
+    </p>
+
+    <h3>Idea principal:</h3>
+    <p>
+        En lugar de considerar <em>y</em> como función de <em>x</em>, se considera <em>x</em> como función de <em>y</em>, es decir, se invierte la relación, y se trabaja con:<br>
+        <code>P = dy/dx ⟹ dx/dy = 1/P</code>
+    </p>
+
+    <h3>Proceso de resolución mediante el método respecto de Y:</h3>
+    <ul>
+        <li>Reescribir la ecuación en términos de <em>x, y</em> y <code>P = dy/dx</code>.</li>
+        <li>Invertir la derivada, considerando <code>dx/dy = 1/P</code>.</li>
+        <li>Expresar la ecuación en función de <em>x, y</em> y <code>dx/dy</code>.</li>
+        <li>Separar variables si es posible, con respecto a <em>x</em> y <em>y</em>.</li>
+        <li>Integrar para obtener la solución en forma explícita o implícita.</li>
+        <li>Aplicar condiciones iniciales para determinar constantes de integración, si las hay.</li>
+    </ul>
+
+    <h3>Ejemplo:</h3>
+    <p>
+        Dada la ecuación:<br>
+        <code>(x² + y²) P³ − y P = 0</code><br>
+        Donde <code>P = dy/dx</code>.<br>
+        Reescribimos considerando <code>dx/dy = 1/P</code>:<br>
+        <code>(x² + y²) (dx/dy)³ − y (dx/dy) = 0</code><br>
+        Simplificamos y despejamos para obtener una ecuación en <em>x, y, dx/dy</em>.<br>
+        Si es separable, integramos para hallar <code>x(y)</code>.<br>
+        Finalmente, invertimos la relación si se desea la solución <code>y(x)</code>.
+    </p>
+
+    <h3>📘 Aplicaciones:</h3>
+    <ul>
+        <li>Derivadas en potencias o expresiones complicadas.</li>
+        <li>Inversión de variables para facilitar la integración.</li>
+        <li>Problemas en dinámica y física no lineal.</li>
+    </ul>
+
+    <h3>Simulación y análisis:</h3>
+    <p>
+        Herramientas como MATLAB, Maple o Wolfram Alpha pueden usarse para resolver y graficar estas ecuaciones, permitiendo visualizar las soluciones y su comportamiento para distintos valores.
+    </p>
+
+    <p><strong>A continuación, se visualizará el ejemplo 1 en el siguiente video:</strong></p>
+
+    <div class="video-grid">
+        <iframe width="660" height="390"
+        src="https://www.youtube.com/embed/2TBp52lR6io?list=PLXxg4ODr91JOH6PxATchDv62jEi3PMh4c&index=5"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+
+    <p><strong>A continuación, se visualizará el ejemplo 2 en el siguiente video:</strong></p>
+    <div class="video-grid">
+        <iframe width="660" height="390"
+        src="https://www.youtube.com/embed/G1c2TmVsN6w?list=PLXxg4ODr91JOH6PxATchDv62jEi3PMh4c&index=6"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+
+    </section>
+
+    <section>
+    <h2>Ecuaciones Diferenciales de Primer Orden y Grado Superior – Método Respecto de X</h2>
+
+    <p>
+        Las ecuaciones diferenciales de primer orden y grado superior son aquellas donde la derivada <em>dy/dx</em> aparece elevada a una potencia mayor que uno o dentro de expresiones no lineales. El método respecto de <em>X</em> es una técnica para resolverlas cuando es posible expresar la variable dependiente <em>y</em> y su diferencial en función de <em>x</em> y <code>P = dy/dx</code>, tomando a <em>x</em> como variable principal y resolviendo respecto a ella.
+    </p>
+
+    <h3>Idea principal:</h3>
+    <p>
+        En este método se considera la derivada <code>P = dy/dx</code> y se trabaja para expresar y separar variables respecto a <em>x</em>, facilitando la integración.
+    </p>
+
+    <h3>Proceso de resolución mediante el método respecto de X:</h3>
+    <ul>
+        <li>Identificar y reescribir la ecuación en términos de <em>x</em>, <em>y</em>, y <code>P = dy/dx</code>.</li>
+        <li>Expresar la ecuación de manera que se pueda separar variables con respecto a <em>x</em> y <em>y</em>.</li>
+        <li>Separar variables para facilitar la integración.</li>
+        <li>Integrar ambos lados para obtener la solución general o explícita.</li>
+        <li>Aplicar condiciones iniciales para encontrar las constantes de integración si están disponibles.</li>
+    </ul>
+
+    <h3>Ejemplo:</h3>
+    <p>
+        Dada la ecuación:<br>
+        <code>x P² + y P = x y</code><br>
+        donde <code>P = dy/dx</code>.<br>
+        Se reorganiza la ecuación para despejar <em>P</em> o expresar la relación de forma que se pueda separar.<br>
+        Se procede a separar variables si es posible o aplicar técnicas auxiliares.<br>
+        Se integra para obtener la solución en función de <em>x</em> y <em>y</em>.
+    </p>
+
+    <h3>📘 Aplicaciones:</h3>
+    <ul>
+        <li>Modelos físicos donde la variable independiente <em>x</em> es el eje principal de análisis.</li>
+        <li>Sistemas con relaciones no lineales entre variables y derivadas.</li>
+        <li>Problemas donde la derivada aparece elevada a potencias o en expresiones complejas.</li>
+    </ul>
+
+    <h3>Simulación y análisis:</h3>
+    <p>
+        Con software como MATLAB, GeoGebra, Maple o Wolfram Alpha es posible resolver estas ecuaciones y graficar sus soluciones para diferentes condiciones iniciales, lo que facilita su comprensión y aplicación práctica.
+    </p>
+
+    <p><strong>A continuación, se visualizará el ejemplo en el siguiente video:</strong></p>
+
+    <div class="video-grid">
+        <iframe width="660" height="390"
+        src="https://www.youtube.com/embed/BeS8oHBz_jo?list=PLXxg4ODr91JOH6PxATchDv62jEi3PMh4c&index=7"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+    </section>
+
+
+
+
+    <section>
+    <h2>Próximos Videos...</h2>
+    <p style="font-weight: bold; font-size: 1.1em;">
+        Si quieres ver más videos, haz clic aquí 👉
+        <a href="https://www.youtube.com/@sistelbo/playlists" target="_blank">
+        <img src="Imagenes/icons8-youtube-play-94.png" alt="YouTube Play" style="width: 40px; vertical-align: middle;"> SISTELBO Youtube
+        </a>
+    </p>
+    </section>
+
+
+
+  </main>
+
+</body>
+</html>
