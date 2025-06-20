@@ -84,6 +84,7 @@ header {
   }
   .menu-icon {
     display: block;
+    position: static;
   }
   .logo {
     flex: 1;
@@ -179,6 +180,7 @@ a:hover .icono-red {
   text-decoration: none;
   font-size: 1.7rem;
   font-weight: bold;
+  margin-top: 20px;
 }
 
 .menu-lateral a:hover {
